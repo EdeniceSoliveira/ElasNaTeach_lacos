@@ -1,66 +1,33 @@
-/* Estilos para a página "Fale Conosco" */
-
-/* Estilos gerais */
+/* Estilos para um visual mais infantil */
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffdbdb; /* Cor de fundo */
-}
-
-.container {
-  max-width: 1068px;
-  margin: 0 auto;
-  padding: 0 20px;
+  background-image: url('backg.jpg');
+  background-size: cover; /* Isso garante que a imagem cubra todo o plano de fundo */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-attachment: fixed; /* Fixa a imagem de fundo para que ela não role com a página */
 }
 
 /* Cabeçalho */
 header {
-  background-color: #FFCFFF; /* Cor de fundo do cabeçalho */
-  color: #ffffff; /* Cor do texto no cabeçalho */
+  background-color: #ffcfff00; /* Um tom mais vibrante de rosa */
+  color: #fff; /* Texto em branco */
   padding: 20px 0;
-  text-align: center;
+  text-align: left; /* Centralize o conteúdo do cabeçalho */
 }
 
-header .logo {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  background-image: url('amor2.png');
-  background-size: cover;
-  margin-right: 10px;
-}
 
-/* Estilos para a barra de navegação (nav) */
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 0;
-  background: #FFCFFF; /* Cor de fundo da barra de navegação */
-  z-index: 100;
-}
-
-/* Estilos para o logotipo */
-.logotipo {
-  order: 1;
+/* Logo com um estilo lúdico */
+.nav-logo img {
   width: 80px;
   height: auto;
-  order: 1;
-  width: 80px;
-  height: 80px;
-  display: block;
-  background-image: url('amor2.png');
-  margin-right: 10px;
-  padding: 10px;
+  object-fit: contain; /* Evita distorção da imagem */
 }
 
-/* Estilos para os links de navegação */
-.nav-links {
-  order: 2;
-  display: flex;
-  gap: 20px;
+/* Altere a cor dos links para algo mais brincalhão */
+.nav-link {
+  color: #df80fc; /* Rosa brilhante */
 }
+
+
 
 /* Estilos para os links de navegação (ativos) */
 .nav-link.active {
